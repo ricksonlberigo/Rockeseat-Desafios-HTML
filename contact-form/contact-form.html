@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <style>
+      * {
+        font-family: Arial;
+      }
+
+      .input-group {
+        margin-bottom: 20px;
+      }
+    </style>
+    <title>Formulário de Contato - Desafio Rockeseat</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Entre em contato com a gente!</legend>
+
+        <div class="input-group">
+          <label for="subject">Assunto:</label>
+          <select name="subject" id="subject">
+            <option value="suporte">Suporte</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="sugestao">Sugestão</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <div class="label-div">
+            <label for="name">Nome Completo:</label>
+          </div>
+          <input type="text" placeholder="Seu nome" id="name" />
+        </div>
+
+        <div class="input-group">
+          <div class="label-div">
+            <label for="email">E-mail:</label>
+          </div>
+          <input type="email" placeholder="seunome@seudominio.com" id="email" />
+        </div>
+
+        <div class="input-group">
+          <div class="label-div">
+            <label for="msg">Mensagem:</label>
+          </div>
+          <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="input-group">
+          <input type="checkbox" id="check" />
+          <label for="check">Aceito receber novidades por e-mail</label>
+        </div>
+
+        <button>Enviar</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
